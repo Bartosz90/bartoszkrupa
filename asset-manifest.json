@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/bartoszkrupa/static/css/main.a9b1bda2.chunk.css",
+    "main.js": "/bartoszkrupa/static/js/main.f9008611.chunk.js",
+    "main.js.map": "/bartoszkrupa/static/js/main.f9008611.chunk.js.map",
+    "runtime-main.js": "/bartoszkrupa/static/js/runtime-main.8d337b76.js",
+    "runtime-main.js.map": "/bartoszkrupa/static/js/runtime-main.8d337b76.js.map",
+    "static/js/2.930bd101.chunk.js": "/bartoszkrupa/static/js/2.930bd101.chunk.js",
+    "static/js/2.930bd101.chunk.js.map": "/bartoszkrupa/static/js/2.930bd101.chunk.js.map",
+    "index.html": "/bartoszkrupa/index.html",
+    "precache-manifest.a77b4392aef59e21ccdf9e33a5826d56.js": "/bartoszkrupa/precache-manifest.a77b4392aef59e21ccdf9e33a5826d56.js",
+    "service-worker.js": "/bartoszkrupa/service-worker.js",
+    "static/css/main.a9b1bda2.chunk.css.map": "/bartoszkrupa/static/css/main.a9b1bda2.chunk.css.map",
+    "static/js/2.930bd101.chunk.js.LICENSE.txt": "/bartoszkrupa/static/js/2.930bd101.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8d337b76.js",
+    "static/js/2.930bd101.chunk.js",
+    "static/css/main.a9b1bda2.chunk.css",
+    "static/js/main.f9008611.chunk.js"
+  ]
+}
