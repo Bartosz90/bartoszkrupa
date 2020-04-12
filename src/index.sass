@@ -3,25 +3,47 @@
     padding: 0
     box-sizing: border-box
 
+=flexCenter()
+    display: flex 
+    justify-content: center 
+    align-items: center 
+    align-content: center
+    flex-wrap: wrap
+
 //colors 
 
 $black: #000
 $white: #fff
 
+$darkGray: #202020
+$pink: crimson
+
 body 
-    font-family: 'Ubuntu', sans-serif
+    font-family: 'Roboto', sans-serif
     background-color: $black
     color: $white
     overflow: hidden
 button 
     border: none 
     background-color: transparent
+    cursor: pointer
+    outline: none
+a 
+    text-decoration: none
+    cursor: pointer
 .mainSection
     width: 100vw 
     height: 100vh 
     opacity: 0
     overflow: hidden
+    transition: .3s
     animation: mainSectionFadeIn 1s linear forwards
     @keyframes mainSectionFadeIn 
         100% 
             opacity: 1
+
+@keyframes changingLanguage 
+    0% 
+        opacity: 0
+    100% 
+        opacity: 1

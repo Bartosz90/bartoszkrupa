@@ -2,8 +2,16 @@
 .languageBtn
     position: fixed 
     top: 20px 
-    right: 20px 
-    font-size: 20px
+    right: 70px 
+    font-size: 30px
     color: $white
     z-index: 3000
-    cursor: pointer
+    transition: .3s
+
+.languageBtn.active 
+    color: $black
+
+.languageBtn.gray 
+    color: gray
+.languageBtn.active.gray 
+    color: $darkGray

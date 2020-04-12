@@ -6,7 +6,11 @@ const LanguageBtn = () => {
   const [state, setState] = useContext(StateContext);
   return (
     <button
-      className="languageBtn"
+      className={
+        state.navActive
+          ? `languageBtn active ${state.theme}`
+          : `languageBtn ${state.theme}`
+      }
       onClick={() => {
         setState((state) => ({
           ...state,

@@ -1,29 +1,13 @@
 @import '../index.sass'
 
 .header 
-    width: 100vw 
-    height: 100vh
-    display: flex 
-    justify-content: flex-start
-    align-items: center 
-    align-content: center 
-    flex-wrap: wrap
-    perspective: 1000px
-    transform-style: preserve-3d
-
-
+    +flexCenter()
     h1 
         width: 100%
         margin-left: 100px
         margin-bottom: 20px
         font-size: 100px
         display: flex
-
-        @keyframes changingLanguage 
-            0% 
-                color: #000 
-            100% 
-                color: #fff
         span 
             transform: translate(40vw, -40vh) translateZ(700px) scale(4)
             @keyframes letterAppear 
@@ -32,3 +16,9 @@
                 100% 
                     transform: none
                     opacity: 1
+.header.gray 
+    background-color: $darkGray
+    color: $pink
+.header.colored 
+    background-color: #f3b05a
+    color: $white

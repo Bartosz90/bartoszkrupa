@@ -6,7 +6,8 @@ import {
   Redirect,
 } from "react-router-dom";
 import Home from "./Home";
-import LanguageBtn from "./LanguageBtn";
+import Nav from "./Nav";
+import Themes from "./Themes";
 
 export const StateContext = createContext();
 const App = () => {
@@ -14,11 +15,14 @@ const App = () => {
     english: false,
     headerAnimationDone: false,
     changingLanguage: false,
+    navActive: false,
+    theme: "",
   });
   return (
     <Router>
       <StateContext.Provider value={[state, setState]}>
-        <LanguageBtn />
+        <Nav />
+        <Themes />
         <Switch>
           <Redirect exact from="/" to="/bartoszkrupa" />
           <Route exact path="/bartoszkrupa" component={Home} />

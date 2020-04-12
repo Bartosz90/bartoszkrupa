@@ -68,7 +68,7 @@ const Home = () => {
     return header;
   };
   return (
-    <header className="header">
+    <header className={`header mainSection ${state.theme}`}>
       {!animationsDone && <Letters />}
       <h1
         style={{

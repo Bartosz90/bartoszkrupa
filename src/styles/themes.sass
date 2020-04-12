@@ -1,0 +1,59 @@
+@import "../index.sass"
+
+.theme 
+    width: 30px
+    height: 30px
+    position: fixed 
+    z-index: 3000
+    border-radius: 50%
+    border: 1px solid $white
+    transition: .3s
+    transform: scale(0)
+.themeChanger 
+    width: 40px 
+    height: 40px
+    bottom: 15px 
+    right: 15px
+    border: none
+    font-size: 27px
+    color: yellow
+    transform: none
+    animation: brushColorChange 10s linear infinite 
+    @keyframes brushColorChange 
+        10% 
+            color: orange 
+        20% 
+            color: red 
+        30%
+            color: darkmagenta
+        40%
+            color: chartreuse
+        50% 
+            color: green
+        60% 
+            color: cyan 
+        70% 
+            color: darkcyan
+        80% 
+            color: deepskyblue
+        90% 
+            color: blue 
+        100% 
+            color: yellow
+.blackBtn 
+    bottom: 15px 
+    right: 60px
+    background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%)
+    transition-delay: .1s
+.grayBtn
+    bottom: 50px
+    right: 50px
+    background: linear-gradient(90deg, rgba(32,32,32,1) 50%, rgba(237,20,61,1) 50%)
+    transition-delay: .2s
+.coloredBtn 
+    bottom: 60px
+    right: 15px
+    background: linear-gradient(90deg, rgba(244,54,54,1) 0%, rgba(235,176,26,1) 23%, rgba(113,212,141,1) 36%, rgba(114,220,222,1) 54%, rgba(98,86,232,1) 73%, rgba(253,45,224,1) 100%)
+    transition-delay: .3s
+.theme.active 
+    transform: none
